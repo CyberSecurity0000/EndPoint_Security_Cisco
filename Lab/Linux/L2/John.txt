@@ -1,0 +1,66 @@
+==============
+    MANUAL
+==============
+
+++++++++++
++ FASE 0 +
+++++++++++
+
+# Tool
+john
+
+
+++++++++++
++ FASE 1 +
+++++++++++
+
+# Rodar o John nos hashes
+john hashes.txt
+
+# Ver senhas já quebradas
+john --show hashes.txt
+
+
+++++++++++
++ FASE 2 +
+++++++++++
+
+# Gerar o arquivo unificado (passwd + shadow)
+unshadow /etc/passwd /etc/shadow > hashes.txt
+
+# Especificar wordlist (ex: rockyou.txt)
+john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+
+
+++++++++++
++ FASE 3 +
+++++++++++
+
+# Forçar o formato MD5
+john --format=raw-md5 hash.txt
+
+# Forçar o formato SHA256
+john --format=raw-sha256 hash.txt
+
+# Ativar regras extras de mutação na wordlist
+john --wordlist=/usr/share/wordlists/rockyou.txt --rules hash.txt
+
+# Salvar progresso em tempo real
+john --session=partida1 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
+
+# Usar brute-force incremental (todas combinações possíveis)
+john --incremental hash.txt
+
+# Limitar brute-force a números apenas
+john --incremental=digits hash.txt
+
+
+++++++++++
++ FASE 4 +
+++++++++++
+
+# Continuar um ataque pausado
+john --restore
+
+# 9. Mostrar senhas já quebradas
+john --show hash.txt

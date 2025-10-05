@@ -1,0 +1,33 @@
+===============
+    MANUAL    
+===============
+
+++++++++++
++ FASE 0 +
+++++++++++
+
+# Editor
+vi
+
+
+++++++++++
++ FASE 1 +
+++++++++++
+
+# Abrir/editar um arquivo
+vi texto.txt
+
+# Entrar no modo de inserção (editar texto)
+i    ou    insert
+
+# Sair do modo de inserção para comandos
+Esc
+
+# Forçar saída sem salvar
+:q!
+
+# Salvar e sair (forçando)
+:wq!
+
+# Salvar e sair (forçando) - atalho
+:x!

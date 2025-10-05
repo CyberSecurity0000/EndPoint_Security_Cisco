@@ -1,0 +1,51 @@
+root:$6$KaPCZFaHd8ZYg8vq$bhzA1puZ/3tPD4I/eVe1SvF/oMrJRcDFUjBus6SO6OND1TPZVDZB7Ci9/ils93kDmov8Wv/akPZ1aGkRRFAns/:0:0:root:/root:/bin/bash
+daemon:*:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:*:2:2:bin:/bin:/usr/sbin/nologin
+sys:*:3:3:sys:/dev:/usr/sbin/nologin
+sync:*:4:65534:sync:/bin:/bin/sync
+games:*:5:60:games:/usr/games:/usr/sbin/nologin
+man:*:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:*:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:*:8:8:mail:/var/mail:/usr/sbin/nologin
+news:*:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:*:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:*:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:*:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:*:34:34:backup:/var/backups:/usr/sbin/nologin
+list:*:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:*:39:39:ircd:/run/ircd:/usr/sbin/nologin
+gnats:*:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:*:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+_apt:*:100:65534::/nonexistent:/usr/sbin/nologin
+systemd-network:*:101:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:*:102:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+messagebus:*:103:104::/nonexistent:/usr/sbin/nologin
+systemd-timesync:*:104:105:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+pollinate:*:105:1::/var/cache/pollinate:/bin/false
+sshd:*:106:65534::/run/sshd:/usr/sbin/nologin
+syslog:*:107:113::/home/syslog:/usr/sbin/nologin
+uuidd:*:108:114::/run/uuidd:/usr/sbin/nologin
+tcpdump:*:109:115::/nonexistent:/usr/sbin/nologin
+tss:*:110:116:TPM software stack,,,:/var/lib/tpm:/bin/false
+landscape:*:111:117::/var/lib/landscape:/usr/sbin/nologin
+usbmux:*:112:46:usbmux daemon,,,:/var/lib/usbmux:/usr/sbin/nologin
+lxd:!:999:100::/var/snap/lxd/common/lxd:/bin/false
+lightdm:*:113:118:Light Display Manager:/var/lib/lightdm:/bin/false
+pulse:*:114:121:PulseAudio daemon,,,:/run/pulse:/usr/sbin/nologin
+cisco:$6$37i1ivfBmMzNZhFC$hXKTrMgxqc/J4IW.5jCKO1GeCWFkGLxbplVvOXZTTDjQEKQhIFl1iaUOs6m.CjfncM8guZdZbqDscHyDUymtF0:1001:1001:1. Cybersecurity Analyst - Support Technician (Cybersecurity Essentials):/home/cisco:/bin/bash
+analyst:$6$tTWdBie2bEosRDJV$XWhL5c8eAEZq/zEwKkzbkcE86vZso6txOkyrVvaUjg16AKZNrlLfP49wDfHJrXwI.aRTqL/.Tf1b6XNAhs4Ei0:1002:1002:2. SOC Analyst (CyberOps Associate):/home/analyst:/bin/bash
+sec_admin:$6$QmW7Okc28oxqIYZN$dXF5oMeMG2tjq5usv.Ivt2Cdra20oIueeFhD5xWXW6PGUUxfJwLVI6lcpzcW4VA5h1cKaMVSujTI2u5WgI/Xe1:1003:1003:3. Security Engineer (Network Security):/home/sec_admin:/bin/bash
+vboxadd:!:998:1::/var/run/vboxadd:/bin/false
+telnetd:*:115:124::/nonexistent:/usr/sbin/nologin
+Alice:$6$oMVdeefbBpxgZWCf$DJ/lp.npniPymCl5xU/P7/wsOMqJtj0tSFUmuqhDTa.SJhs/Qgzo6QQ2bV9RP/UB01giBdiAAySvVoW0XFTS/.:1004:1004::/home/Alice:/bin/bash
+Bob:$6$A7RobK0k/jmAMjYd$pQ05EE.R1cohiE2mOMEgJB9uUEKH8z8fXCsxxUfPtYkpqWrs8lk5yHUeqnFT6PAtbGg0BeH/.bqGPNL7ffgfm/:1005:1005::/home/Bob:/bin/bash
+Eve:$6$dxM39h24p9vri1Hx$ah.gVt4fdOEj3BYKCAGFEpowk/l5vvNcxfNlLd7l6JdPQhnK0ImKcjiw/epEB9sXbBxRYBLx2OiRViQkNCZTi0:1006:1006::/home/Eve:/bin/bash
+Eric:$6$2uif2qGy6blp3WeZ$AgebBtU1owduQns5MSa3BmKxFPlQaVIZEafS2.f9KB2rRQHMxIr7AQrDnZqcgAKdOHmiREHrsNqYkTQzQq1Zv/:1007:1007::/home/Eric:/bin/bash
+Xnobody:!:1008:1008::/home/Xnobody:/bin/sh
+snort:*:116:125:Snort IDS:/var/log/snort:/usr/sbin/nologin
+ntp:*:117:127::/nonexistent:/usr/sbin/nologin
+ftp:*:118:128:ftp daemon,,,:/srv/ftp:/usr/sbin/nologin
+tftp:*:119:129:tftp daemon,,,:/srv/tftp:/usr/sbin/nologin
+freerad:*:120:130::/etc/freeradius:/usr/sbin/nologin
+speech-dispatcher:!:121:29:Speech Dispatcher,,,:/run/speech-dispatcher:/bin/false
+diego:$6$xi2tvZYKA2KvdWR3$CRdeRT7UjgPFHm4N8..rw.lNfkfKMTKkBEnn5KYaiydVK4fe7392.0C7nUPVlKRpeEf0nviojFhZhztKHSA.U0:1000:1000:,,,:/home/diego:/bin/bash

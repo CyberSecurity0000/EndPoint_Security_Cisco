@@ -1,0 +1,68 @@
+==============
+    MANUAL    
+==============
+
+++++++++++
++ FASE 0 +
+++++++++++
+
+# Tools
+windows
+cmd
+
+
+++++++++++
++ FASE 1 +
+++++++++++
+
+# Listar todos os usuários locais
+net user
+
+# Criar um usuário
+net user Hacker123 SenhaForte123! /add
+
+# Alterar senha de um usuário
+net user Hacker123 NovaSenha@123
+
+# Excluir usuário
+net user Hacker123 /delete
+
+# Ativar a conta Administrador integrada
+net user Administrador /active:yes
+
+# Desativar a conta Administrador integrada
+net user Administrador /active:no
+
+
+++++++++++
++ FASE 2 +
+++++++++++
+
+# Adicionar usuário a grupo padrão (Usuários)
+net localgroup "Usuários" Hacker123 /add
+
+# Listar membros de um grupo (ex: Administradores)
+net localgroup Administradores
+
+# Adicionar usuário a grupo Administradores
+net localgroup Administradores Hacker123 /add
+
+# Remover usuário do grupo Administradores
+net localgroup Administradores Hacker123 /delete
+
+
+++++++++++
++ FASE 3 +
+++++++++++
+
+# Ativar Firewall do Windows (todos os perfis)
+netsh advfirewall set allprofiles state on
+
+# Desativar Firewall do Windows (todos os perfis)
+netsh advfirewall set allprofiles state off
+
+# Desativar Windows Defender em tempo real (apenas via CMD)
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+
+# Ativar Windows Defender em tempo real (apenas via CMD)
+reg add "HKLM\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 0 /f

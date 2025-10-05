@@ -1,0 +1,102 @@
+==============
+    MANUAL    
+==============
+
+++++++++++
++ FASE 0 +
+++++++++++
+
+# SO
+kali
+
+
+++++++++++
++ FASE 1 +
+++++++++++
+
+# Alterar senha do root
+sudo passwd root
+
+# Mostrar usuários logados, sessão, data e hora
+w
+
+# Mostrar usuários logados, sessão, data, hora e IP
+who
+
+# Mostrar nome da máquina
+hostname
+
+# Mostrar nome da máquina e informações detalhadas
+hostnamectl
+
+# Mostrar histórico de comandos do usuário
+history
+
+# Localizar arquivos que contenham "shadow" no nome/caminho
+locate shadow
+
+
+++++++++++
++ FASE 2 +
+++++++++++
+
+# Atualizar lista de pacotes
+sudo apt update
+
+# Instalar um programa (exemplo: OpenSSH Server)
+sudo apt install openssh-server
+
+# Status & Serviço
+sudo systemctl status ssh
+sudo systemctl start ssh
+
+
+++++++++++
++ FASE 3 +
+++++++++++
+
+# Exibe todos os processos (snapshot, não atualiza)
+ps -aux
+
+# Exibe e administra processos em tempo real (carga do sistema, logins, etc.)
+top
+
+# Envia sinal de controle para processo
+kill <PID>
+
+# Lista processos em execução no shell atual
+jobs
+
+# Mata processo específico pelo PID
+kill -9 33761
+
+
+++++++++++
++ FASE 4 +
+++++++++++
+
+# Criação de usuário
+adduser usuário
+
+# Lista contas de usuários (informações em /etc/passwd)
+ls -l /etc/passwd
+
+
+++++++++++
++ FASE 5 +
+++++++++++
+
+# Desligar imediatamente
+telinit 0
+
+# Reiniciar imediatamente
+telinit 6
+
+# Desligar agora
+shutdown -h now
+
+# Desligar agendado (ex: 22:00)
+shutdown -h 22:00
+
+# Reiniciar sistema
+shutdown -r
